@@ -1,0 +1,21 @@
+import colorama
+import inspect
+
+print("--- Атрибути та методи бібліотеки colorama ---")
+
+attributes = dir(colorama)
+print(attributes)
+
+print("\n--- Найважливіші компоненти та їх робота ---")
+
+print(f"init: {type(colorama.init)}")
+
+print(f"Fore: {type(colorama.Fore)}")
+
+print(f"Back: {type(colorama.Back)}")
+
+print(f"Style: {type(colorama.Style)}")
+
+colorama.init()
+print(colorama.Fore.GREEN + "Бібліотека Colorama успішно ініціалізована!")
+print(colorama.Style.RESET_ALL + "Колір скинуто до стандартного.")
